@@ -1,0 +1,173 @@
+body {
+    font-family: 'Benguiat Bold', arial;
+    margin:10px;
+    padding:0;
+}
+
+/* Header Styles */
+
+.navbar {
+    position: fixed; /* hace que la nav bar te siga */ 
+    top: 0;
+    width: 100%;
+    background-color: #02343F;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .logo {
+    height:100px;
+    margin-left: 75px;
+    mix-blend-mode: color-burn;
+    }
+
+/*sticky-wsp */ 
+.sticky-wsp{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+}
+
+/* Carousel Styles */
+
+.carrucel {
+  display: flex;
+  margin: 50px 0px 0px 150px;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 80%;
+  height: 40%;
+}
+
+.carrucel img {
+  scroll-snap-align: center;
+  width: 100%;  
+  height: 100%;
+  object-fit: cover;
+}
+
+/* tracking */ 
+
+.tracking img {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+/* slider style - contacto*/
+
+.slider {
+  aspect-ratio: 16/10;
+  width: 60%;
+  margin: 150px 0px 0px 250px ;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.slider img{
+  width: 100%;
+  left: 0;
+  position: sticky;
+  object-fit: cover;
+  border-radius: 5px;
+  scroll-snap-align: center;
+}
+
+/* Tracking style*/
+.tracking {
+  margin-top: 70px;
+} 
+
+/* Titulos H2 */ 
+.titulos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: oblique;
+}
+
+/*Envios */
+.envios{
+  margin-top: 10px;
+} 
+
+.nosotros{
+  margin-top: 10px;
+}
+/* imagenes */ 
+
+.best-selling{
+  display: flex;
+  align-items: center;
+}
+
+.new-arrival{
+  display: flex;
+  align-items: center;
+}
+
+.best-offers{
+  display: flex;
+  align-items: center;
+}
+
+/* Section Styles */
+
+section {
+  padding: 2rem;
+}
+
+section h2 {
+  font-size:2rem;
+  margin-bottom: 1rem;
+}
+
+section img {
+    width: 100%;  
+    height: auto;  
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* Footer Styles */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.footer-logo {
+  grid-column: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-terms {
+  grid-column: 2;
+}
+
+.footer-form {
+  grid-column: 3;
+}
+
+
+.footer-logo img {
+  max-width: 100px;
+  align-items: center;
+  justify-content: end;
+}
+
+.footer-form input {
+  width: 100%;
+  margin-bottom: 10px;
+}
